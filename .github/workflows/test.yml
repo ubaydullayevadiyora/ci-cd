@@ -18,4 +18,6 @@ jobs:
       - name: Install
         run: npm ci
       - name: Test Tekshirish
+        env:
+          PORT: ${{secrets.PORT}}
         run: npm run test
